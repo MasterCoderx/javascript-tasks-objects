@@ -47,3 +47,13 @@ function checkIfUsersHaveTheSameName(userOne, userTwo) {
 }
 console.log(checkIfUsersHaveTheSameName(firstJohn, secondJohn)); // true
 console.log(checkIfUsersHaveTheSameName(firstJohn, adam)); // false
+
+// Exercise 4
+
+function getVoteCount(voters) {
+    return voters['upvotes'] - voters['downvotes'];
+}
+
+console.log(getVoteCount({ upvotes: 10, downvotes: 5 })); // 5
+console.log(getVoteCount({ upvotes: 75, downvotes: 90 })); // -15
+console.log(getVoteCount({ upvotes: 50, downvotes: 50 })); // 0
