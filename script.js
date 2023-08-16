@@ -67,3 +67,15 @@ function getCubeVolume(volume) {
 console.log(getCubeVolume({ width: 10, length: 5, height: 2})); // 100
 console.log(getCubeVolume({ width: 100, length: 500, height: 0})); // 0
 console.log(getCubeVolume({ width: 15, length: 2, height: 5})); // 150
+
+// Exercise 6
+
+function getCityInformation(cityInformation) {
+    return `${cityInformation['name']} is in ${cityInformation['country']} and has an area of ${cityInformation['areaInKilometers']} square kilometers`
+}
+
+console.log(getCityInformation({
+    name: 'Warsaw',
+    country: 'Poland',
+    areaInKilometers: 517
+})); // Warsaw is in Poland and has an area of 517 square kilometers
