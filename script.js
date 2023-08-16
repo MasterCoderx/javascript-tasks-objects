@@ -57,3 +57,13 @@ function getVoteCount(voters) {
 console.log(getVoteCount({ upvotes: 10, downvotes: 5 })); // 5
 console.log(getVoteCount({ upvotes: 75, downvotes: 90 })); // -15
 console.log(getVoteCount({ upvotes: 50, downvotes: 50 })); // 0
+
+// Exercise 5
+
+function getCubeVolume(volume) {
+    return volume['width'] * volume['length'] * volume['height'];
+}
+
+console.log(getCubeVolume({ width: 10, length: 5, height: 2})); // 100
+console.log(getCubeVolume({ width: 100, length: 500, height: 0})); // 0
+console.log(getCubeVolume({ width: 15, length: 2, height: 5})); // 150
