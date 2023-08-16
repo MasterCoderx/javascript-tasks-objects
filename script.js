@@ -79,3 +79,20 @@ console.log(getCityInformation({
     country: 'Poland',
     areaInKilometers: 517
 })); // Warsaw is in Poland and has an area of 517 square kilometers
+
+// Exercise 7
+
+const john = {
+    firstName: 'John',
+    lastName: 'Smith'
+}
+const newUser = getUserCopy(john);
+
+function getUserCopy(userToCopy) {
+    return Object.assign({},userToCopy);
+}
+
+console.log(newUser.firstName); // John
+console.log(newUser.lastName); // Smith
+console.log(newUser === john); // false <-- this is crucial
+
