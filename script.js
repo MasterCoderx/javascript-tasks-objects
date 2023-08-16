@@ -96,3 +96,15 @@ console.log(newUser.firstName); // John
 console.log(newUser.lastName); // Smith
 console.log(newUser === john); // false <-- this is crucial
 
+// Exercise 8
+
+const animal = {
+    name: "dog",
+    legs: 4,
+    color: "white"
+}
+
+function animalSentence(animalToSentence) {
+    return `This ${animalToSentence.color} ${animalToSentence.name} has ${animalToSentence.legs} legs.`
+}
+console.log(animalSentence(animal));
